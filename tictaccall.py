@@ -32,7 +32,7 @@ class TicTacCall:
             if sleep_time < 0:
                 warnings.warn("Skipping missing frame")
                 continue
-            time.sleep(next_call - now)
+            time.sleep(sleep_time)
     @property
     def time_series(self):
         return self._time_series.copy()
