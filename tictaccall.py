@@ -28,7 +28,7 @@ class TicTacCall:
                 print(f"Time = {repetition*timestep}, value={value}")
             repetition += 1
             final = time.time()
-            sleep_time = next_call - now
+            sleep_time = next_call - final
             if sleep_time < 0:
                 warnings.warn("Skipping missing frame")
                 continue
